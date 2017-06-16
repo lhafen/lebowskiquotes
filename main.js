@@ -1,8 +1,8 @@
 
 
 function playSound(e){
-     const audio = document.querySelector("#" + e.srcElement.id + "audio");
-     const key = document.querySelector("#" + e.srcElement.id);
+     const audio = document.getElementById(e.srcElement.id + "audio");
+     const key = document.getElementById(e.srcElement.id);
      if (!audio) return;
      audio.currentTime = 0; //Sets audio file back to beginning of file
      audio.play();
